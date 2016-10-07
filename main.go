@@ -10,7 +10,6 @@ import (
 )
 
 func mongoConnect() (s string) {
-	
 	session, err := mgo.Dial("mongo")
 	if err == nil {
 		defer session.Close()
@@ -22,7 +21,6 @@ func mongoConnect() (s string) {
 }
 
 func indexHandler(w http.ResponseWriter, r *http.Request) {
-
 	hostname, _ := os.Hostname()
 	mongostatus := mongoConnect()
 	fmt.Fprintf(w, "<h1>hello, %s</h1>\n<b>Hostname: </b>%s<br><b>MongoDB Status: </b>%s", os.Getenv("NAME"), hostname, mongostatus)

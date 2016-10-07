@@ -2,7 +2,7 @@
 
 [![Deploy to Docker Cloud](https://files.cloud.docker.com/images/deploy-to-dockercloud.svg)](https://cloud.docker.com/stack/deploy/)
 
-A simple Golang web app (using Martini) which can easily be deployed to Docker Cloud.
+A simple Golang web app which can easily be deployed to Docker Cloud.
 
 ## Running locally
 
